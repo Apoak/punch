@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm audit:*)",
+      "Bash(grep -r \"from 'ai'\" /home/apokerlu/claude_practice/uigen/src --include=\"*.ts\" --include=\"*.tsx\" -l 2>&1)",
+      "Bash(grep -r \"from 'ai'\" /home/apokerlu/claude_practice/uigen/src --include=\"*.ts\" --include=\"*.tsx\" 2>&1)",
+      "Bash(grep -rn \"from 'ai\\\\|from \\\\\"ai\" /home/apokerlu/claude_practice/uigen/src --include=\"*.ts\" --include=\"*.tsx\" 2>&1)",
+      "Bash(grep -rn \"from 'ai/react\\\\|from \\\\\"ai/react\" /home/apokerlu/claude_practice/uigen/src --include=\"*.ts\" --include=\"*.tsx\" 2>&1)",
+      "Bash(npm list:*)",
+      "Bash(npm test:*)",
+      "Bash(npx vitest:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_type",
+      "mcp__playwright__browser_wait_for",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright",
+      "Bash(git init:*)"
+    ]
+  }
+}

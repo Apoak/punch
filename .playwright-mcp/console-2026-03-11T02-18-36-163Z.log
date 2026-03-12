@@ -1,0 +1,125 @@
+[  746892ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ about:srcdoc:0
+[  747043ms] [WARNING] cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation @ https://cdn.tailwindcss.com/:63
+[  747802ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ about:srcdoc:0
+[  747822ms] [WARNING] cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation @ https://cdn.tailwindcss.com/:63
+[  749163ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ about:srcdoc:0
+[  749182ms] [WARNING] cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation @ https://cdn.tailwindcss.com/:63
+[ 1114707ms] [ERROR] ./src/app/page.tsx:7:21
+Ecmascript file had an error
+   5 | import { redirect } from "next/navigation";
+   6 |
+>  7 | const MainContent = dynamic(
+     |                     ^^^^^^^^
+>  8 |   () => import("./main-content").then((m) => m.MainContent),
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  9 |   { ssr: false }
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 10 | );
+     | ^^
+  11 |
+  12 | export default async function Home() {
+  13 |   const user = await getUser();
+
+`ssr: false` is not allowed with `next/dynamic` in Server Components. Please move it into a Client Component. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:2359
+[ 1136049ms] [ERROR] ./src/app/page.tsx:7:21
+Ecmascript file had an error
+   5 | import { redirect } from "next/navigation";
+   6 |
+>  7 | const MainContent = dynamic(
+     |                     ^^^^^^^^
+>  8 |   () => import("./main-content").then((m) => m.MainContent),
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  9 |   { ssr: false }
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 10 | );
+     | ^^
+  11 |
+  12 | export default async function Home() {
+  13 |   const user = await getUser();
+
+`ssr: false` is not allowed with `next/dynamic` in Server Components. Please move it into a Client Component. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:2359
+[ 1137332ms] [ERROR] ./src/app/page.tsx:7:21
+Ecmascript file had an error
+   5 | import { redirect } from "next/navigation";
+   6 |
+>  7 | const MainContent = dynamic(
+     |                     ^^^^^^^^
+>  8 |   () => import("./main-content").then((m) => m.MainContent),
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  9 |   { ssr: false }
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 10 | );
+     | ^^
+  11 |
+  12 | export default async function Home() {
+  13 |   const user = await getUser();
+
+`ssr: false` is not allowed with `next/dynamic` in Server Components. Please move it into a Client Component. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:2359
+[ 1137471ms] [ERROR] ./src/app/page.tsx:7:21
+Ecmascript file had an error
+   5 | import { redirect } from "next/navigation";
+   6 |
+>  7 | const MainContent = dynamic(
+     |                     ^^^^^^^^
+>  8 |   () => import("./main-content").then((m) => m.MainContent),
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  9 |   { ssr: false }
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 10 | );
+     | ^^
+  11 |
+  12 | export default async function Home() {
+  13 |   const user = await getUser();
+
+`ssr: false` is not allowed with `next/dynamic` in Server Components. Please move it into a Client Component. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:2359
+[ 1137892ms] [ERROR] ./src/app/page.tsx:7:21
+Ecmascript file had an error
+   5 | import { redirect } from "next/navigation";
+   6 |
+>  7 | const MainContent = dynamic(
+     |                     ^^^^^^^^
+>  8 |   () => import("./main-content").then((m) => m.MainContent),
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  9 |   { ssr: false }
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 10 | );
+     | ^^
+  11 |
+  12 | export default async function Home() {
+  13 |   const user = await getUser();
+
+`ssr: false` is not allowed with `next/dynamic` in Server Components. Please move it into a Client Component. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:2359
+[ 1138279ms] [ERROR] ./src/app/page.tsx:7:21
+Ecmascript file had an error
+   5 | import { redirect } from "next/navigation";
+   6 |
+>  7 | const MainContent = dynamic(
+     |                     ^^^^^^^^
+>  8 |   () => import("./main-content").then((m) => m.MainContent),
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  9 |   { ssr: false }
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 10 | );
+     | ^^
+  11 |
+  12 | export default async function Home() {
+  13 |   const user = await getUser();
+
+`ssr: false` is not allowed with `next/dynamic` in Server Components. Please move it into a Client Component. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:2359
+[ 1156298ms] [ERROR] ./src/app/page.tsx:7:21
+Ecmascript file had an error
+   5 | import { redirect } from "next/navigation";
+   6 |
+>  7 | const MainContent = dynamic(
+     |                     ^^^^^^^^
+>  8 |   () => import("./main-content").then((m) => m.MainContent),
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  9 |   { ssr: false }
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 10 | );
+     | ^^
+  11 |
+  12 | export default async function Home() {
+  13 |   const user = await getUser();
+
+`ssr: false` is not allowed with `next/dynamic` in Server Components. Please move it into a Client Component. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:2359
