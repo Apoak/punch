@@ -1,0 +1,57 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Employee {
+  id           String             @id @default(cuid())
+  name         String
+  role         String
+  hoursPerWeek Int                @default(40)
+  availability DayAvailability[]
+  shifts       Shift[]
+  createdAt    DateTime           @default(now())
+  updatedAt    DateTime           @updatedAt
+}
+
+model DayAvailability {
+  id           String   @id @default(cuid())
+  employee     Employee @relation(fields: [employeeId], references: [id], onDelete: Cascade)
+  employeeId   String
+  day          String   // Mon, Tue, Wed, Thu, Fri, Sat, Sun
+  available    Boolean  @default(true)
+  earliestStart String?  // HH:mm
+  latestEnd    String?  // HH:mm
+}
+
+model Schedule {
+  id             String   @id @default(cuid())
+  weekStartDate  String   @unique
+  shifts         Shift[]
+  createdAt      DateTime @default(now())
+}
+
+model Shift {
+  id         String   @id @default(cuid())
+  schedule   Schedule @relation(fields: [scheduleId], references: [id], onDelete: Cascade)
+  scheduleId String
+  employee   Employee @relation(fields: [employeeId], references: [id])
+  employeeId String
+  day        String
+  date       String
+  startTime  String
+  endTime    String
+}
+
+model ShiftRequirement {
+  id        String   @id @default(cuid())
+  day       String
+  startTime String
+  endTime   String
+  minStaff  Int
+  roles     String[] // empty = any role
+}
